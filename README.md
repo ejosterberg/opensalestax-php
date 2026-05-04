@@ -2,7 +2,7 @@
 
 > PHP SDK for the [OpenSalesTax](https://github.com/ejosterberg/open-sales-tax) engine — the open-source, self-hostable US sales tax calculation API.
 
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE) [![PHP](https://img.shields.io/badge/php-%E2%89%A58.1-777bb4)](composer.json)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE) [![PHP](https://img.shields.io/badge/php-%E2%89%A58.2-777bb4)](composer.json)
 
 **Status:** v0.1 alpha. API surface stable. Tested against engine v0.14 — v0.24.
 
@@ -31,7 +31,7 @@ That's it. ~200 LOC of stateless wrapper code — no business logic, no caching,
 composer require ejosterberg/opensalestax
 ```
 
-Requires PHP 8.1+ and a reachable OpenSalesTax engine (self-host via the [engine's docker-compose](https://github.com/ejosterberg/open-sales-tax)).
+Requires PHP 8.2+ (uses class-level `readonly` syntax for DTOs) and a reachable OpenSalesTax engine (self-host via the [engine's docker-compose](https://github.com/ejosterberg/open-sales-tax)).
 
 ## Quickstart
 
@@ -130,7 +130,7 @@ try {
 - **PHPStan level=max** — zero suppressed errors
 - **PHP-CS-Fixer** with PSR-12 + risky rules — zero violations
 - **PHPUnit** — 21 unit + integration tests, 54 assertions, all passing
-- **GitHub Actions CI** matrix on PHP 8.1 / 8.2 / 8.3
+- **GitHub Actions CI** matrix on PHP 8.2 / 8.3 / 8.4
 - **DCO sign-off** required on every commit
 
 ## Engine compatibility
