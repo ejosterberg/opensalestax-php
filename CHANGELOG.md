@@ -18,4 +18,4 @@ Versioning: [SemVer](https://semver.org).
 - `X-API-Key` header auth (optional)
 - Decimal-string amount handling (no float / cents conversion)
 - PHPUnit test suite with fixture-based unit tests + gated live-engine integration tests
-- GitHub Actions CI on PHP 8.1 / 8.2 / 8.3
+- GitHub Actions CI on PHP 8.2 / 8.3 / 8.4

@@ -13,7 +13,7 @@ US sales tax is a mess: ~10,000 jurisdictions, ~50,000 ZIPs, rates change quarte
 [**OpenSalesTax**](https://github.com/ejosterberg/open-sales-tax) is the open-source self-hostable engine. **This SDK** is the PHP wrapper around its v1 HTTP API — `composer require`, point at your engine, get tax.
 
 ```php
-$client = new OpenSalesTaxClient(baseUrl: 'http://your-engine:8080');
+$client = new OpenSalesTax\Client(baseUrl: 'http://your-engine:8080');
 
 $result = $client->calculate(
     address: new Address(zip5: '55401'),
